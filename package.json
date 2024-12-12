@@ -4,7 +4,9 @@
   "description": "Design dirigido à domínio",
   "main": "index.js",
   "scripts": {
-    "generate:commit-message": "chmod +x ./scripts/generate-commit-message.sh && ./scripts/generate-commit-message.sh"
+    "generate:commit-message": "chmod +x ./scripts/generate-commit-message.sh && ./scripts/generate-commit-message.sh",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "keywords": [],
   "author": "",
