@@ -1,0 +1,16 @@
+{
+  "name": "04-clean-ddd",
+  "version": "1.0.0",
+  "description": "Design dirigido à domínio",
+  "main": "index.js",
+  "scripts": {
+    "generate:commit-message": "chmod +x ./scripts/generate-commit-message.sh && ./scripts/generate-commit-message.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
