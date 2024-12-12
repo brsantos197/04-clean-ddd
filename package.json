@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Design dirigido à domínio",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "generate:commit-message": "chmod +x ./scripts/generate-commit-message.sh && ./scripts/generate-commit-message.sh",
     "test": "vitest run",
@@ -14,6 +15,7 @@
   "devDependencies": {
     "@types/node": "^22.10.2",
     "typescript": "^5.7.2",
+    "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^2.1.8"
   },
   "dependencies": {
