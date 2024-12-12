@@ -8,7 +8,7 @@ interface AnswerQuestionUseCaseRequest {
   content: string
 }
 
-export class AnserQuestionUseCase {
+export class AnswerQuestionUseCase {
   constructor(private answersRepository: AnswersRepository) {}
   async execute({
     instructorId,

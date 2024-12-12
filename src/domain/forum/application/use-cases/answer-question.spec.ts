@@ -1,12 +1,13 @@
+import { Answer } from '../../enterprise/entities/answer'
 import { AnswersRepository } from '../repositories/answers-repository'
-import { AnserQuestionUseCase } from './answer-question'
+import { AnswerQuestionUseCase } from './answer-question'
 
 const fakeAnswersRepository: AnswersRepository = {
-  create: async () => {},
+  create: async (answer: Answer) => {},
 }
 
 test('create an answer', async () => {
-  const answerQuestion = new AnserQuestionUseCase(fakeAnswersRepository)
+  const answerQuestion = new AnswerQuestionUseCase(fakeAnswersRepository)
 
   const answer = await answerQuestion.execute({
     instructorId: '1',
