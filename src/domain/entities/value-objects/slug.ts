@@ -6,13 +6,13 @@ export class Slug {
 
   /**
    * Receives a string and normalizes it as a slug
-   * 
+   *
    * @example
-   * 
+   *
    * const slug = Slug.createFromText('Example title')
-   * 
+   *
    * return 'example-title'
-   * 
+   *
    * @param text {string}
    */
   static createFromText(text: string) {
