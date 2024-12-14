@@ -1,6 +1,6 @@
 import { UniqueEntityId } from '@/core/entities/unique-entity-id'
 import { InMemoryAnswersRepository } from 'test/repositories/in-memory-answers-repository'
-import { DeleteAnswerUseCase } from './delete-answer'
+import { DeleteAnswerUseCase } from './delete-answers'
 import { makeAnswer } from 'test/factories/make-answer'
 
 let inMemoryAnswersRepository: InMemoryAnswersRepository

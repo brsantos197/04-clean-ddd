@@ -1,10 +1,9 @@
 import { UniqueEntityId } from '@/core/entities/unique-entity-id'
-import { InMemoryAnswersRepository } from 'test/repositories/in-memory-answers-repository'
-import { DeleteAnswerUseCase } from './delete-answer'
 import { makeAnswer } from 'test/factories/make-answer'
+import { makeQuestion } from 'test/factories/make-question'
+import { InMemoryAnswersRepository } from 'test/repositories/in-memory-answers-repository'
 import { InMemoryQuestionsRepository } from 'test/repositories/in-memory-questions-repository'
 import { ChooseQuestionBestAnswerUseCase } from './choose-question-best-answer'
-import { makeQuestion } from 'test/factories/make-question'
 
 let inMemoryAnswersRepository: InMemoryAnswersRepository
 let inMemoryQuestionsRepository: InMemoryQuestionsRepository
