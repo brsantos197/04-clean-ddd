@@ -1,4 +1,4 @@
-import { UniqueEntityId } from '@/core/entities/unique-entity-id'
+import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import { QuestionCommentsRepository } from '../repositories/question-comments-repository'
 import { QuestionsRepository } from '../repositories/questions-repository'
 import { QuestionComment } from './../../enterprise/entities/question-comment'
@@ -37,11 +37,11 @@ export class CommentOnQuestionUseCase {
 
     const questionComment = QuestionComment.create(
       {
-        authorId: new UniqueEntityId(authorId),
-        questionId: new UniqueEntityId(questionId),
+        authorId: new UniqueEntityID(authorId),
+        questionId: new UniqueEntityID(questionId),
         content,
       },
-      new UniqueEntityId(),
+      new UniqueEntityID(),
     )
 
     await this.questionCommentsRepository.create(questionComment)

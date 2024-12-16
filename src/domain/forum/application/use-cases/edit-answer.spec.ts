@@ -1,4 +1,4 @@
-import { UniqueEntityId } from '@/core/entities/unique-entity-id'
+import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import { makeAnswer } from 'test/factories/make-answer'
 import { InMemoryAnswersRepository } from 'test/repositories/in-memory-answers-repository'
 import { EditAnswerUseCase } from './edit-answer'
@@ -17,9 +17,9 @@ describe('Edit Answer', () => {
     const authorId = 'author-1'
     const newAnswer = makeAnswer(
       {
-        authorId: new UniqueEntityId(authorId),
+        authorId: new UniqueEntityID(authorId),
       },
-      new UniqueEntityId(answerId),
+      new UniqueEntityID(answerId),
     )
 
     await inMemoryAnswersRepository.create(newAnswer)
@@ -40,9 +40,9 @@ describe('Edit Answer', () => {
     const authorId = 'author-1'
     const newAnswer = makeAnswer(
       {
-        authorId: new UniqueEntityId(authorId),
+        authorId: new UniqueEntityID(authorId),
       },
-      new UniqueEntityId(answerId),
+      new UniqueEntityID(answerId),
     )
 
     await inMemoryAnswersRepository.create(newAnswer)
