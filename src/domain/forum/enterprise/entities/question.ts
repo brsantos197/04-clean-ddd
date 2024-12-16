@@ -1,9 +1,8 @@
-import dayjs from 'dayjs'
-import { Entity } from '@/core/entities/entity'
+import { AggregateRoot } from '@/core/entities/aggregate-root'
 import { UniqueEntityId } from '@/core/entities/unique-entity-id'
 import { Optional } from '@/core/types/optional'
+import dayjs from 'dayjs'
 import { Slug } from './value-objects/slug'
-import { AggregateRoot } from '@/core/entities/aggregate-root'
 
 export interface QuestionProps {
   authorId: UniqueEntityId
